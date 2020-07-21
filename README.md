@@ -1,4 +1,5 @@
 # SimpleSR
+[![Documentation Status](https://readthedocs.org/projects/simplesr/badge/?version=latest)](https://simplesr.readthedocs.io/en/latest/?badge=latest)
 ![](https://img.shields.io/badge/Version-0.1-critical)
 ![](https://img.shields.io/badge/Python-3.8-informational)
 ![](https://img.shields.io/badge/Tensorflow-2.0%2B-informational)
@@ -9,12 +10,13 @@
 ![Butterfly](./docs/_static/gallery/thesis/10.png)
 ![Child](./docs/_static/gallery/thesis/15.png)
 
-A simple library for Deep Learning based Single Image Super-Resolution  
+A simple library for Deep Learning based Single Image Super-Resolution
 *Note: The project is still under active development, things might not work or possibly break with future releases.
 Feel free to open an issue if you encounter a problem.*
 
 ## Pictures of results
-* todo
+
+A few examples of results are shown in the [docs](https://simplesr.readthedocs.io/en/latest/src/results/results.html)
 
 ## Features
 * Implementations of popular Super-Resolution network architectures:
@@ -35,7 +37,7 @@ Feel free to open an issue if you encounter a problem.*
 * Evaluate/compare models and produce image grids of your personal test pictures
 
 ## Installation and getting started
-* see documentation (TODO add link)
+* [see documentation](https://simplesr.readthedocs.io/en/latest/index.html)
 
 ## Datasets
 For experimentation typical Super-Resolution datasets can be found here:
@@ -89,7 +91,7 @@ For experimentation typical Super-Resolution datasets can be found here:
 * [ ] network interpolation for combining different networks
 * [ ] support for TTFRecords 
 * [x] build documentation with sphinx
-* [ ] host documentation on readthedocs.io
+* [x] host documentation on readthedocs.io
 * [ ] package for pypi
 
 ## Known Issues
