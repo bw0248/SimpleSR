@@ -59,7 +59,6 @@ data/results/remote
 data/results/evaluation
 data/results
 data/datasets/test
-data/datasets
 tests/data/
 tests/results
 experiments/data
