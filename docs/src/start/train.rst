@@ -64,45 +64,45 @@ Now from the command-line start your file:
   python -m path.to.my_training
 
 
-Configure Training from Python
+Configure Training with Python
 ------------------------------
 
 A configuration with python code equivalent to the before shown YAML configuration would look like this:
 
 .. code-block::
 
-    from simple_sr.utils.config.config_util import ConfigUtil
-    from simple_sr.models.generator import Generator
-    from simple_sr.models.sr_model import SRModel
-    from simple_sr.utils.models.loss_functions.mean_squared_error import MeanSquaredError
-    from simple_sr.training import training_utils
+  from simple_sr.utils.config.config_util import ConfigUtil
+  from simple_sr.models.generator import Generator
+  from simple_sr.models.sr_model import SRModel
+  from simple_sr.utils.models.loss_functions.mean_squared_error import MeanSquaredError
+  from simple_sr.training import training_utils
 
-    upsample_factor = 2
-    config = ConfigUtil.training_config(
-        train_data_paths="./data/datasets/reduced/div2k/8",
-        num_epochs=3,
-        batch_size=8,
-        hr_pic_size=(80, 80),
-        scale=upsample_factor,
-        train_val_split=0.5,
-        crop_imgs=True,
-        crop_size=(80, 80, 3),
-        num_crops=16,
-    )
+  upsample_factor = 2
+  config = ConfigUtil.training_config(
+      train_data_paths="./data/datasets/reduced/div2k/8",
+      num_epochs=3,
+      batch_size=8,
+      hr_pic_size=(80, 80),
+      scale=upsample_factor,
+      train_val_split=0.5,
+      crop_imgs=True,
+      crop_size=(80, 80, 3),
+      num_crops=16,
+  )
 
-    generator = Generator(
-        upsample_factor=upsample_factor,
-        architecture="srresnet",
-        loss_functions=[MeanSquaredError]
-    )
+  generator = Generator(
+      upsample_factor=upsample_factor,
+      architecture="srresnet",
+      loss_functions=[MeanSquaredError]
+  )
 
-    model = SRModel.init(
-        config,
-        generator=generator,
-        generator_optimizer=tf.keras.optimizers.Adam,
-    )
+  model = SRModel.init(
+      config,
+      generator=generator,
+      generator_optimizer=tf.keras.optimizers.Adam,
+  )
 
-    pipeline = DataPipeline.from_config(config)
+  pipeline = DataPipeline.from_config(config)
 
 Now that you have all components initialized you can start the training
 
