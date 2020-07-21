@@ -1,6 +1,6 @@
 # SimpleSR
-[![Documentation Status](https://readthedocs.org/projects/simplesr/badge/?version=latest)](https://simplesr.readthedocs.io/en/latest/?badge=latest)
 ![](https://img.shields.io/badge/Version-0.1-critical)
+[![Documentation Status](https://readthedocs.org/projects/simplesr/badge/?version=latest)](https://simplesr.readthedocs.io/en/latest/?badge=latest)
 ![](https://img.shields.io/badge/Python-3.8-informational)
 ![](https://img.shields.io/badge/Tensorflow-2.0%2B-informational)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
