@@ -19,7 +19,6 @@ A simple YAML configuration for training a resnet without an adversarial compone
      results_save_path: ./data/results
      num_epochs: 3
      batch_size: 8
-     hr_pic_size: !!python/tuple [80, 80]
      scale: 2
      train_val_split: 0.5
      crop_imgs: true
@@ -71,18 +70,19 @@ A configuration with python code equivalent to the before shown YAML configurati
 
 .. code-block::
 
+  import tensorflow as tf
   from simple_sr.utils.config.config_util import ConfigUtil
   from simple_sr.models.generator import Generator
   from simple_sr.models.sr_model import SRModel
+  from simple_sr.data_pipeline.data_pipeline import DataPipeline
   from simple_sr.utils.models.loss_functions.mean_squared_error import MeanSquaredError
-  from simple_sr.training import training_utils
+  from simple_sr.operations import training
 
   upsample_factor = 2
   config = ConfigUtil.training_config(
-      train_data_paths="./data/datasets/reduced/div2k/8",
+      train_data_paths="./data/datasets/div2k/8",
       num_epochs=3,
       batch_size=8,
-      hr_pic_size=(80, 80),
       scale=upsample_factor,
       train_val_split=0.5,
       crop_imgs=True,
@@ -93,7 +93,7 @@ A configuration with python code equivalent to the before shown YAML configurati
   generator = Generator(
       upsample_factor=upsample_factor,
       architecture="srresnet",
-      loss_functions=[MeanSquaredError]
+      loss_functions=[MeanSquaredError()]
   )
 
   model = SRModel.init(
@@ -104,11 +104,9 @@ A configuration with python code equivalent to the before shown YAML configurati
 
   pipeline = DataPipeline.from_config(config)
 
-Now that you have all components initialized you can start the training
+  # Now that you have all components initialized you can start the training
+  training.run_training(config, pipeline, model)
 
-.. code-block::
-
-    training_utils.run_training(config, pipeline, model)
 
 Again as before start your file like so:
 
@@ -118,4 +116,4 @@ Again as before start your file like so:
   source .env/bin/activate
 
   # start training
-  python -m path.to.my_training
+  python -m path.to.my_training     # make sure to leave out the ".py" file ending
