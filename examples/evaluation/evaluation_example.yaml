@@ -1,0 +1,18 @@
+# Example for evaluating a trained model on test data
+
+general:
+  operation: evaluation     # one of evaluation| inference
+  data_paths:
+    - ./data/datasets/test/set5
+  model_paths:
+    # enter path to model here
+  results_save_path: ./data/results
+  batch_size: 1      # needs to be 1 if your pictures have differing image dimensions
+  scale: 4
+  resize_filter: bicubic
+  save_single: true
+  grid: true
+  with_original: false
+  interpolate: true
+  combine_halfs: true
+

@@ -1,0 +1,10 @@
+setuptools==41.0.0
+tensorflow==2.2.0
+scikit-learn
+scikit-image
+pillow
+ruamel.yaml
+h5py
+matplotlib
+seaborn
+tqdm

@@ -1,0 +1,21 @@
+# this example shows the minimum of configuration that is needed to train a model
+# for more configuration options look into complex_example.yaml
+
+general:
+  operation: training
+  train_data_paths: ./data/datasets/div2k/2
+  results_save_path: ./data/results
+  num_epochs: 3
+  batch_size: 8
+  scale: 2
+  train_val_split: 0.1
+  crop_imgs: true
+  crop_size: !!python/tuple [80, 80, 3]
+  num_crops: 32
+model:
+  generator:
+    upsample_factor: 2
+    architecture: srresnet
+    loss_functions:
+      - loss_function: MeanSquaredError
+  generator_optimizer: Adam
