@@ -43,7 +43,7 @@ To initialize the components and start the training you could just use the Makef
 If you don't want to use make or want to put your yaml outside the examples folder, you can start the training from python like this:
 
 
-.. code-block::
+.. code-block:: python
 
   from simple_sr.utils.config.config_util import ConfigUtil
   from simple_sr.training import training_utils
@@ -68,7 +68,7 @@ Configure Training with Python
 
 A configuration with python code equivalent to the before shown YAML configuration would look like this:
 
-.. code-block::
+.. code-block:: python
 
   import tensorflow as tf
   from simple_sr.utils.config.config_util import ConfigUtil
