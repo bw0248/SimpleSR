@@ -126,4 +126,8 @@ For now just restart the training.
 * [A Deep Journey into Super-resolution: A Survey (Anwar et al.)](https://arxiv.org/pdf/1904.07523.pdf)
 
 
-![baboon_half](./docs/_static/baboon_4x.png)
+<p align="center">
+  <img src=https://simplesr.readthedocs.io/en/latest/_static/baboon_4x.png />
+</p>
+
+
