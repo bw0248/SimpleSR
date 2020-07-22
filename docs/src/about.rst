@@ -6,4 +6,4 @@ SimpleSR was developed as part of my Undergrad Thesis with the main focus to lea
 
 .. note:: The project is still under active development, things might not work or possibly break in the future. Feel free to open an issue if you encounter a problem.
 
-Source code is available at `github <https://github.com/bw0248/SimpleSR>`_. (not yet public)
+Source code is available at `github <https://github.com/bw0248/SimpleSR>`_.

@@ -1,5 +1,4 @@
 # SimpleSR
-![](https://img.shields.io/badge/Version-0.1-critical)
 [![Documentation Status](https://readthedocs.org/projects/simplesr/badge/?version=latest)](https://simplesr.readthedocs.io/en/latest/?badge=latest)
 [![codecov](https://codecov.io/gh/bw0248/SimpleSR/branch/master/graph/badge.svg)](https://codecov.io/gh/bw0248/SimpleSR)
 ![](https://img.shields.io/badge/Python-3.8-informational)
@@ -11,7 +10,7 @@
 ![Butterfly](./docs/_static/gallery/thesis/10.png)
 ![Child](./docs/_static/gallery/thesis/15.png)
 
-A simple library for Deep Learning based Single Image Super-Resolution
+A simple library for Deep Learning based Single Image Super-Resolution based on Tensorflow2.0 and Python3.8.     
 *Note: The project is still under active development, things might not work or possibly break with future releases.
 Feel free to open an issue if you encounter a problem.*
 
@@ -34,6 +33,7 @@ A few examples of results are shown in the [docs](https://simplesr.readthedocs.i
     - support for various augmentations during preprocessing
     - option to degrade low-res training samples with jpg noise for learned noise removal
 * Easy configuration of Model/Training via single YAML file
+* Support for user defined architectures and loss functions
 * Memory efficient inference for large pictures
 * Evaluate/compare models and produce image grids of your personal test pictures
 
@@ -88,7 +88,7 @@ For experimentation typical Super-Resolution datasets can be found here:
 ## Todo
 
 * [ ] dataset downloader
-* [x] better support for user defined architectures/loss functions
+* [x] support for user defined architectures/loss functions
 * [ ] network interpolation for combining different networks
 * [ ] support for TTFRecords 
 * [x] build documentation with sphinx
@@ -124,3 +124,6 @@ For now just restart the training.
 * [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks (Xintao Wang et al.)](https://arxiv.org/abs/1809.00219)
 * [Deep Learning for Image Super-resolution:A Survey (Zhihao Wang et al.)](https://arxiv.org/pdf/1902.06068.pdf)
 * [A Deep Journey into Super-resolution: A Survey (Anwar et al.)](https://arxiv.org/pdf/1904.07523.pdf)
+
+
+![baboon_half](./docs/_static/baboon_4x.png)
