@@ -64,11 +64,6 @@ Set5/Set14
 Zooms
 ------
 
-
-.. image:: ../../_static/gallery/thesis/zooms/0.png
-    :target: ../../_static/gallery/thesis/zooms/0.png
-
-
 .. image:: ../../_static/gallery/thesis/zooms/1.png
     :target: ../../_static/gallery/thesis/zooms/1.png
 
@@ -95,3 +90,6 @@ Zooms
 
 .. image:: ../../_static/gallery/thesis/zooms/10.png
     :target: ../../_static/gallery/thesis/zooms/10.png
+
+.. image:: ../../_static/gallery/thesis/zooms/0.png
+    :target: ../../_static/gallery/thesis/zooms/0.png
