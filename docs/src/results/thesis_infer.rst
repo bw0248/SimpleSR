@@ -10,13 +10,13 @@ Set5/Set14
     :target: ../../_static/gallery/thesis/infer/16_set14.png
 
 .. image:: ../../_static/gallery/thesis/infer/17_set14.png
-    :target: ../../_static/gallery/thesis/infer/17_set141.png
+    :target: ../../_static/gallery/thesis/infer/17_set14.png
 
 .. image:: ../../_static/gallery/thesis/infer/18_set14.png
     :target: ../../_static/gallery/thesis/infer/18_set14.png
 
 .. image:: ../../_static/gallery/thesis/infer/19_set14.png
-    :target: ../../_static/gallery/thesis/infer/19_set141.png
+    :target: ../../_static/gallery/thesis/infer/19_set14.png
 
 .. image:: ../../_static/gallery/thesis/infer/20_set14.png
     :target: ../../_static/gallery/thesis/infer/20_set14.png
