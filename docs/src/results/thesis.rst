@@ -9,3 +9,4 @@ Click on images to be able to zoom in further and make out smaller differences.
 
    thesis_eval
    thesis_infer
+   vgg_comp
