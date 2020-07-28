@@ -1,4 +1,5 @@
 # SimpleSR
+[![Build Status](https://travis-ci.com/bw0248/SimpleSR.svg?branch=master)](https://travis-ci.com/bw0248/SimpleSR)
 [![Documentation Status](https://readthedocs.org/projects/simplesr/badge/?version=latest)](https://simplesr.readthedocs.io/en/latest/?badge=latest)
 [![codecov](https://codecov.io/gh/bw0248/SimpleSR/branch/master/graph/badge.svg)](https://codecov.io/gh/bw0248/SimpleSR)
 ![](https://img.shields.io/badge/Python-3.8-informational)
