@@ -7,9 +7,9 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 
-![Bird](./docs/_static/gallery/thesis/0.png)
+![Baboon](./docs/_static/gallery/thesis/0.png)
 ![Butterfly](./docs/_static/gallery/thesis/10.png)
-![Child](./docs/_static/gallery/thesis/15.png)
+![Bird](./docs/_static/gallery/thesis/15.png)
 
 A simple library for Deep Learning based Single Image Super-Resolution based on Tensorflow2.0 and Python3.8.     
 *Note: The project is still under active development, things might not work or possibly break with future releases.
