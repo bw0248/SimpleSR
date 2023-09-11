@@ -12,8 +12,6 @@
 ![Bird](./docs/_static/gallery/thesis/15.png)
 
 A simple library for Deep Learning based Single Image Super-Resolution based on Tensorflow2.0 and Python3.8.     
-*Note: The project is still under active development, things might not work or possibly break with future releases.
-Feel free to open an issue if you encounter a problem.*
 
 ## Pictures of results
 
